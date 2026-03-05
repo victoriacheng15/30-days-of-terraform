@@ -1,6 +1,6 @@
 # 30 Days of OpenTofu 🧊
 
-A practical, day-by-day guide to mastering Infrastructure as Code (IaC) with OpenTofu (Terraform-compaitable).
+A practical, day-by-day curriculum for understanding the end-to-end flow of Infrastructure as Code using OpenTofu, the community-driven evolution of the HCL ecosystem.
 
 ---
 
