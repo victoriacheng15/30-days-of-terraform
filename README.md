@@ -1,34 +1,13 @@
 # 30 Days of OpenTofu 🧊
 
-A practical, day-by-day guide to mastering Infrastructure as Code (IaC) with OpenTofu, focused on Azure and AWS. This README refines the original plan with prerequisites, daily learning objectives, hands-on checklists, CI/CD/testing templates, cost/security notes, and resources to make each day actionable.
+A practical, day-by-day guide to mastering Infrastructure as Code (IaC) with OpenTofu (Terraform-compaitable).
 
 ---
-
-## Who this is for
-
-- Developers, SREs, and platform engineers who already know basic cloud concepts (VMs, networking, IAM).
-- Comfortable with the command line and have access to Azure and AWS accounts (or use free tiers).
 
 ## Estimated commitment
 
 - Recommended: 1–2 hours/day for guided learning, 3–4 hours on project days.
 - Adjust pace: skip sections you already know or expand project days into multiple sessions.
-
-## Prerequisites
-
-- Install OpenTofu (compatible release, see https://github.com/opentofu/opentofu).
-- Install Azure CLI and AWS CLI and configure accounts.
-- Recommended local tools: Git, VSCode, jq, a code formatter (prettier/terraform fmt), and Docker for container labs.
-- Optional: test accounts or sandbox subscriptions to avoid production costs.
-
----
-
-## Learning structure and additions
-
-Each day now includes:
-- A short learning objective.
-- A two-step hands-on task or checklist.
-- Links to official docs or examples where appropriate.
 
 ---
 
