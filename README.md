@@ -12,6 +12,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 ---
 
 ## 🛠 Phase 1: Foundations & HCL (Days 1–7)
+
 *Goal: Read, write, and run HCL; understand OpenTofu lifecycle and state.*
 
 - Day 01 — Objective: Understand IaC principles and OpenTofu’s value.
@@ -45,6 +46,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 ---
 
 ## ☁️ Phase 2: Azure Infrastructure (Days 8–15)
+
 *Goal: Build secure, production-ready Azure infra components.*
 
 - Day 08 — Objective: Remote state with Azure Storage.
@@ -75,6 +77,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 ---
 
 ## 🏗 Phase 3: AWS Infrastructure (Days 16–23)
+
 *Goal: Build highly available workloads in AWS and practice state management.*
 
 - Day 16 — Objective: State backend and IAM best practices.
@@ -105,6 +108,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 ---
 
 ## 🚀 Phase 4: Advanced Patterns & CI/CD (Days 24–30)
+
 *Goal: Reuse, test, automate, and govern infrastructure at scale.*
 
 - Day 24 — Objective: Modules and registry.
@@ -163,10 +167,10 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 ## Resources and links
 
-- OpenTofu: https://github.com/opentofu/opentofu
-- Terraform docs (concepts and HCL): https://www.terraform.io/docs
-- Azure docs: https://learn.microsoft.com/azure
-- AWS docs: https://docs.aws.amazon.com/
+- OpenTofu: <https://github.com/opentofu/opentofu>
+- Terraform docs (concepts and HCL): <https://www.terraform.io/docs>
+- Azure docs: <https://learn.microsoft.com/azure>
+- AWS docs: <https://docs.aws.amazon.com/>
 
 ---
 
