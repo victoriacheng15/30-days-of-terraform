@@ -55,4 +55,3 @@ In this lab, you will walk through the full lifecycle of a resource, learn how t
 
 ---
 *Back to [Main README](../README.md)*
-
