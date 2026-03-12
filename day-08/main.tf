@@ -11,7 +11,7 @@ terraform {
   # You must fill these in manually with the output from setup-backend.sh
   backend "azurerm" {
     resource_group_name  = "rg-tofu-state-mgmt"
-    storage_account_name = "tofustate2566"
+    storage_account_name = "tofustate17871"
     container_name       = "tfstate"
     key                  = "day-08.terraform.tfstate"
   }
