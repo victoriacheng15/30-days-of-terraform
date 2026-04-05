@@ -6,10 +6,10 @@
 
 ## Why use Remote State?
 
-1.  **Collaboration:** All team members see the same infrastructure state.
-2.  **State Locking:** Prevents two people from running `tofu apply` at the exact same time (which would corrupt your resources).
-3.  **Security:** State files often contain sensitive information (passwords, keys). Storing them in a secure, encrypted Azure Storage container is much safer than keeping them on your laptop.
-4.  **Availability:** If your laptop breaks, your infrastructure state is still safe in the cloud.
+1. **Collaboration:** All team members see the same infrastructure state.
+2. **State Locking:** Prevents two people from running `tofu apply` at the exact same time (which would corrupt your resources).
+3. **Security:** State files often contain sensitive information (passwords, keys). Storing them in a secure, encrypted Azure Storage container is much safer than keeping them on your laptop.
+4. **Availability:** If your laptop breaks, your infrastructure state is still safe in the cloud.
 
 ---
 

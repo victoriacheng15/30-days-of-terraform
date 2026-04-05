@@ -24,12 +24,12 @@ resource "azurerm_kubernetes_cluster" "aks" {
   sku_tier            = "Free"
 
   default_node_pool {
-    name                = "systempool"
-    vm_size             = var.vm_size
+    name                 = "systempool"
+    vm_size              = var.vm_size
     auto_scaling_enabled = true
-    min_count           = var.min_count
-    max_count           = var.max_count
-    os_disk_size_gb     = 30
+    min_count            = var.min_count
+    max_count            = var.max_count
+    os_disk_size_gb      = 30
   }
 
   identity {

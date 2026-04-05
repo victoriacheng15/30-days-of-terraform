@@ -7,11 +7,14 @@ A **Virtual Network (VNet)** is your own private network in Azure. It provides i
 ## CIDR Basics (The "Address Space")
 
 When you create a VNet, you must specify an address space using **CIDR notation** (e.g., `10.0.0.0/16`).
+
 - `/16` provides 65,536 IP addresses.
 - `/24` provides 256 IP addresses (minus 5 reserved by Azure).
 
 ### Subnet Segmentation
+
 Instead of putting everything in one big network, we split the VNet into **Subnets**. This allows for:
+
 1. **Security:** Applying different firewall rules (NSGs) to each tier.
 2. **Organization:** Separating web servers from databases.
 3. **Routing:** Controlling how traffic flows between tiers.

@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     null = {
-      source = "opentofu/null"
+      source  = "opentofu/null"
       version = "~> 3.0"
     }
   }

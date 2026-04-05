@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In modern cloud architecture, we move away from sharing passwords and keys. Instead, we use **Managed Identities**. 
+In modern cloud architecture, we move away from sharing passwords and keys. Instead, we use **Managed Identities**.
 
 A **Managed Identity** provides an identity for applications to use when connecting to resources that support Azure AD (now Microsoft Entra ID) authentication. The best part? Azure manages the identity for you—there are **no secrets to rotate or leak**.
 
@@ -11,13 +11,15 @@ A **Managed Identity** provides an identity for applications to use when connect
 **Role-Based Access Control (RBAC)** is the system you use to manage who has access to Azure resources, what they can do with those resources, and what areas they have access to.
 
 It consists of three elements:
-1.  **Security Principal:** The "Who" (e.g., your Managed Identity).
-2.  **Role Definition:** The "What" (e.g., `Storage Blob Data Reader`).
-3.  **Scope:** The "Where" (e.g., a specific Storage Account).
+
+1. **Security Principal:** The "Who" (e.g., your Managed Identity).
+2. **Role Definition:** The "What" (e.g., `Storage Blob Data Reader`).
+3. **Scope:** The "Where" (e.g., a specific Storage Account).
 
 ## The Principle of Least Privilege
 
-Always assign the **minimum** permissions required for a task. 
+Always assign the **minimum** permissions required for a task.
+
 - **BAD:** Giving a VM `Owner` access to a subscription.
 - **GOOD:** Giving a VM `Storage Blob Data Reader` access to a single container.
 
