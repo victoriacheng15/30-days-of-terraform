@@ -3,6 +3,7 @@
 ## Introduction
 
 **Network Security Groups (NSGs)** act as a virtual firewall for your subnets and individual network interfaces. They contain a list of security rules that allow or deny inbound or outbound network traffic based on:
+
 - Source and Destination IP address
 - Port
 - Protocol
@@ -14,6 +15,7 @@ Rules are processed in priority order (lower numbers first). Once a match is fou
 ## Least Privilege Principle
 
 Always aim for **Least Privilege**. This means only allowing the specific traffic necessary for the application to function. For example:
+
 - **Frontend:** Allow inbound HTTP (80) and HTTPS (443) from the internet.
 - **Backend:** Only allow traffic from the Frontend subnet.
 - **Database:** Only allow SQL traffic from the Backend subnet.
@@ -39,6 +41,7 @@ In this lab, you will apply security rules to the network architecture created i
 2. Review `main.tf` to see how NSGs are associated with subnets.
 3. Run `tofu apply` to deploy the security configuration.
 4. Verify the rules in the Azure Portal or via CLI:
+
    ```bash
    az network nsg rule list --resource-group rg-day-10-security --nsg-name nsg-frontend
    ```

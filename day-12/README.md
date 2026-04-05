@@ -2,16 +2,17 @@
 
 ## Introduction
 
-In the past, developers stored secrets (like DB passwords or API keys) in `.env` files or hardcoded them in their code. This is **dangerous**. 
+In the past, developers stored secrets (like DB passwords or API keys) in `.env` files or hardcoded them in their code. This is **dangerous**.
 
 **Azure Key Vault** is a centralized cloud service for storing and managing sensitive information. It allows you to:
+
 - **Secrets:** Store application passwords and connection strings.
 - **Keys:** Manage encryption keys for your data.
 - **Certificates:** Provision and manage SSL/TLS certificates.
 
 ## Identity-as-a-Key
 
-Instead of using a password to "Unlock" the Key Vault, we use the **Managed Identity** from Day 11. 
+Instead of using a password to "Unlock" the Key Vault, we use the **Managed Identity** from Day 11.
 
 By using **Access Policies** or **RBAC**, you can tell the Key Vault:
 > *"Only allow the `id-app-reader` Identity to 'Get' secrets."*
@@ -44,6 +45,7 @@ In this lab, you will build a "Digital Safe" and give your Identity the combinat
 2. Review `main.tf` to see how we reference the existing Identity.
 3. Run `tofu apply` to deploy the Vault and Secret.
 4. Try to view the secret via the Azure CLI (if you have permissions):
+
    ```bash
    az keyvault secret show --name db-password --vault-name <your-vault-name>
    ```

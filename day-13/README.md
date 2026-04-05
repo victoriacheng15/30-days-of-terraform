@@ -33,11 +33,14 @@ In this lab, you will deploy your first managed Kubernetes cluster.
 2. Review `main.tf` to understand the `azurerm_kubernetes_cluster` resource.
 3. Run `tofu apply` to deploy the cluster. **Note:** This can take 5–10 minutes.
 4. Once complete, extract the `kubeconfig`:
+
    ```bash
    tofu output -raw kube_config > azurek8s
    export KUBECONFIG=$(pwd)/azurek8s
    ```
+
 5. Verify connectivity:
+
    ```bash
    kubectl get nodes
    ```

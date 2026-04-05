@@ -19,7 +19,7 @@ variable "vnet_address_space" {
 variable "subnet_prefixes" {
   description = "A map of subnet names to address prefixes."
   type        = map(string)
-  default     = {
+  default = {
     frontend = "10.0.1.0/24"
     backend  = "10.0.2.0/24"
     database = "10.0.3.0/24"

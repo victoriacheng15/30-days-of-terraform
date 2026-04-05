@@ -5,6 +5,7 @@
 In Day 13, we deployed a static cluster with a single fixed node. In the real world, application traffic varies. **Autoscaling** allows your cluster to respond to changes in demand automatically.
 
 There are two main types of scaling in AKS:
+
 1. **Cluster Autoscaler:** Monitors for pods that can't be scheduled on existing nodes due to resource constraints and automatically adds/removes nodes in your VMSS.
 2. **Horizontal Pod Autoscaler (HPA):** Scales the number of pod replicas based on CPU/memory usage.
 
@@ -36,19 +37,26 @@ In this lab, you will see the VMSS in action as it responds to "resource pressur
 1. Initialize your directory with `tofu init`.
 2. Run `tofu apply` to update your cluster (or deploy a new one if you destroyed Day 13).
 3. Connect to your cluster:
+
    ```bash
    tofu output -raw kube_config > azurek8s
    export KUBECONFIG=$(pwd)/azurek8s
    ```
+
 4. Check the current node count:
+
    ```bash
    kubectl get nodes
    ```
+
 5. Deploy the "Stress" test:
+
    ```bash
    kubectl apply -f stress-test.yaml
    ```
+
 6. Observe the "Pending" pods and the nodes being added:
+
    ```bash
    # In one terminal, watch the pods
    kubectl get pods -w
@@ -56,7 +64,9 @@ In this lab, you will see the VMSS in action as it responds to "resource pressur
    # In another terminal, watch the nodes scale up
    kubectl get nodes -w
    ```
+
 7. Once you see the new node join and the pods transition from `Pending` to `Running`, clean up the test:
+
    ```bash
    kubectl delete -f stress-test.yaml
    ```

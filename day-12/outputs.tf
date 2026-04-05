@@ -3,7 +3,7 @@ output "key_vault_uri" {
 }
 
 output "secret_id" {
-  value = azurerm_key_vault_secret.db_password.id
+  value     = azurerm_key_vault_secret.db_password.id
   sensitive = true
 }
 
