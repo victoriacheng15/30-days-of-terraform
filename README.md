@@ -41,7 +41,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 - Day 07 — Project 1: Deploy a Static Website to Azure Blob Storage.
   - Checklist: Create resource group, storage account, enable static website hosting, upload index.html.
-  - Deliverable: `project-1/` branch with `main.tf`, `variables.tf`, `outputs.tf`, and a README.
+  - Deliverable: `day-07/` branch with `main.tf`, `variables.tf`, `outputs.tf`, and a README.
 
 ---
 
@@ -72,106 +72,84 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 - Day 15 — Project 2: Secure AKS with private networking.
   - Checklist: Private AKS cluster, private endpoint, and restricted API server.
-  - Deliverable: `project-2/` with module usage and network diagram.
+  - Deliverable: `day-15/` with module usage and network diagram.
 
 ---
 
-## 🏗 Phase 3: AWS Infrastructure (Days 16–23)
+## 🏗 Phase 3: Azure Deep Dive & Security (Days 16–23)
 
-*Goal: Build highly available workloads in AWS and practice state management.*
+*Goal: Master complex Azure architectures, global networking, and enterprise governance.*
 
-- Day 16 — Objective: State backend and IAM best practices.
-  - Checklist: Configure S3 backend and DynamoDB for locking; create least-privileged IAM roles.
+- Day 16 — Objective: Azure SQL and Database Security.
+  - Checklist: Provision Azure SQL with Private Endpoints, audit logging, and TDE.
+  - Lab: Lock down a database so it's only accessible via a specific VNet/Subnet.
 
-- Day 17 — Objective: VPC design.
-  - Checklist: Create multi-AZ VPC with public/private subnets and NAT.
+- Day 17 — Objective: App Service and VNet Integration.
+  - Checklist: Deploy an App Service with Regional VNet Integration and Private Link.
+  - Lab: Connect a PaaS app to a private database without using public IPs.
 
-- Day 18 — Objective: EC2 and ASGs.
-  - Checklist: Launch an ASG with a simple web server image.
+- Day 18 — Objective: Application Gateway and WAF.
+  - Checklist: Configure an L7 Load Balancer with Web Application Firewall (WAF) policies.
+  - Lab: Path-based routing and SSL termination for internal services.
 
-- Day 19 — Objective: ALB and traffic routing.
-  - Checklist: Configure ALB, listeners, and target groups across ASG.
+- Day 19 — Objective: Azure Front Door.
+  - Checklist: Global traffic acceleration and security with Front Door.
+  - Lab: Implement a global entry point for multi-region Azure App Services.
 
-- Day 20 — Objective: RDS Multi-AZ.
-  - Checklist: Provision an RDS instance with proper subnet group and backups.
+- Day 20 — Objective: Observability with Azure Monitor.
+  - Checklist: Log Analytics workspaces, Diagnostic Settings, and KQL basics.
+  - Lab: Export Terraform logs to Log Analytics and build a resource health dashboard.
 
-- Day 21 — Objective: EKS cluster basics.
-  - Checklist: Create EKS cluster and configure `kubeconfig` outputs.
+- Day 21 — Objective: Azure Policy as Code.
+  - Checklist: Implement naming conventions and allowed-region guardrails using Terraform.
+  - Lab: Assign a policy that denies non-compliant resources and test it via `tofu apply`.
 
-- Day 22 — Objective: EKS security (IRSA).
-  - Checklist: Configure OIDC provider and create IAM role for a pod service account.
+- Day 22 — Objective: Cost Management and Optimization.
+  - Checklist: Create budget alerts and automated tagging strategies.
+  - Lab: Use Terraform to enforce mandatory tags for cost-center allocation.
 
-- Day 23 — Project 3: EKS + RDS (Load-balanced web app).
-  - Checklist: Helm chart or manifests, autoscaling, and a secure RDS backend.
-  - Deliverable: `project-3/` with README and Terraform modules.
+- Day 23 — Project 3: Secure Multi-tier PaaS Architecture.
+  - Checklist: Combine App Service, SQL, Key Vault, and App Gateway into a hardened environment.
+  - Deliverable: `day-23/` with a full "Landing Zone" style deployment.
 
 ---
 
-## 🚀 Phase 4: Advanced Patterns & CI/CD (Days 24–30)
+## 🚀 Phase 4: Advanced Patterns & Multi-Cloud (Days 24–30)
 
-*Goal: Reuse, test, automate, and govern infrastructure at scale.*
+*Goal: Scale your automation, test patterns, and validate across clouds.*
 
 - Day 24 — Objective: Modules and registry.
-  - Checklist: Build a reusable module, add versioning, and publish to a module registry (or local mirror).
+  - Checklist: Build a reusable module, add versioning, and refactor Azure labs into modules.
+  - Lab: Publish to a module registry (or local mirror).
 
 - Day 25 — Objective: Advanced expressions (`count`, `for_each`, dynamic blocks).
   - Checklist: Refactor duplicate resources into loops and parameterized modules.
+  - Lab: Use `for_each` to manage multiple VNets or subnets dynamically.
 
 - Day 26 — Objective: Testing with `tofu test` and policy-as-code.
-  - Checklist: Write unit tests for modules and add simple policy checks (e.g., CIS or guardrails).
+  - Checklist: Write unit tests for modules and add simple policy checks (e.g., Checkov or TFLint).
+  - Lab: Verify module outputs and resource attributes via automated tests.
 
 - Day 27 — Objective: CI/CD with GitHub Actions and OIDC.
-  - Checklist: Create an action workflow that runs `tofu fmt`, `tofu init`, `tofu plan` and `tofu apply` on protected branches using OIDC.
-  - Example: Add `.github/workflows/deploy.yml` scaffold in each project.
+  - Checklist: Create an action workflow that runs `tofu fmt`, `tofu init`, `tofu plan` and `tofu apply` using OIDC.
+  - Lab: Implement drift detection and automated plan summaries on PRs.
 
-- Day 28 — Objective: Multi-cloud orchestration patterns.
-  - Checklist: Share state and data safely across providers; avoid hard coupling.
+- Day 28 — Objective: AWS Introduction for Azure Engineers.
+  - Checklist: Networking (VPC) and Identity (IAM) comparison to Azure VNets/Entra ID.
+  - Lab: Provision an S3 bucket with a basic IAM policy and compare to Azure Blob/RBAC.
 
-- Day 29 — Objective: Governance, drift detection, and import.
-  - Checklist: Run drift detection, import an existing resource, and reconcile state.
+- Day 29 — Objective: AWS Compute and EKS.
+  - Checklist: Launch an EKS cluster basics or an EC2 instance with proper IAM roles.
+  - Lab: Compare EKS node pools and networking (VPC CNI) with Azure AKS patterns.
 
-- Day 30 — Final Capstone: Multi-Cloud Global Load Balancer.
-  - Checklist: Combine Azure and AWS projects into a single repo using modules; implement health checks and cross-cloud DNS failover.
-  - Deliverable: `capstone/` with design doc, modules, CI workflow, and cost estimates.
+- Day 30 — Final Capstone: Multi-Cloud Traffic Management.
+  - Checklist: Combine Azure and AWS projects; implement cross-cloud DNS failover or global routing.
+  - Deliverable: `day-30/` with design doc, modules, and multi-cloud orchestration.
 
 ---
-
-## Projects & repo layout recommendations
-
-- Use a mono-repo with a `projects/` folder or one repo per project depending on team size.
-- Each project: `main.tf`, `variables.tf`, `outputs.tf`, `modules/`, `README.md`, `.github/workflows/`.
-- Include a `Makefile` or scripts for common tasks: `make plan`, `make apply`, `make destroy`.
-
-## CI/CD & testing templates
-
-- Add a GitHub Actions scaffold that runs `tofu fmt`, `tofu validate` (if available), `tofu plan` and posts plan summaries as PR comments.
-- Use OIDC for short-lived credentials; avoid storing long-lived secrets in the repo.
-
-## Cost & safety notes
-
-- Always use non-production subscriptions for experiments.
-- Add budget alerts and tag resources with owner and environment labels.
-- Use small instance types and set proper destroy protections only for production.
-
-## Security and governance
-
-- Principle of least privilege for IAM/RBAC.
-- Use secret backends (Key Vault/Secrets Manager) and avoid plaintext credentials in code.
-- Add basic policy-as-code checks to CI (deny public S3, require encryption, etc.).
-
-## Troubleshooting tips
-
-- If `tofu plan` fails: check provider credentials, ensure required APIs are enabled, and validate variable types.
-- Inspect state files cautiously; use `tofu state` commands to inspect and remove tainted resources safely.
-- Keep a simple rollback plan and snapshots for state before major changes.
 
 ## Resources and links
 
-- OpenTofu: <https://github.com/opentofu/opentofu>
-- Terraform docs (concepts and HCL): <https://www.terraform.io/docs>
-- Azure docs: <https://learn.microsoft.com/azure>
-- AWS docs: <https://docs.aws.amazon.com/>
-
----
-
-If this looks good, run `git add README.md && git commit -m "Refine 30-day OpenTofu plan: prerequisites, objectives, projects, CI/CD, and security notes\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"` to save the changes.
+- OpenTofu: https://github.com/opentofu/opentofu
+- Terraform docs (concepts and HCL): https://www.terraform.io/docs
+- Azure docs: https://learn.microsoft.com/azure
