@@ -15,33 +15,13 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 *Goal: Read, write, and run HCL; understand OpenTofu lifecycle and state.*
 
-- Day 01 — Objective: Understand IaC principles and OpenTofu’s value.
-  - Checklist: Read OpenTofu overview; compare license and community notes.
-  - Lab: Create a local repo and write your first `main.tf` that creates a dummy resource (provider: local or null).
-
-- Day 02 — Objective: Install and configure OpenTofu and CLIs.
-  - Checklist: Install binaries, run `tofu init`, configure Azure/AWS credentials.
-  - Lab: Validate provider auth and run `tofu plan` (no resources).
-
-- Day 03 — Objective: HCL syntax — variables, maps, lists, outputs.
-  - Checklist: Define variables with type constraints and defaults; create outputs for previous lab.
-  - Lab: Use `terraform console`-equivalent (OpenTofu console) to evaluate expressions.
-
-- Day 04 — Objective: OpenTofu lifecycle commands.
-  - Checklist: Practice `init`, `plan`, `apply`, `destroy` with the sample project.
-  - Lab: Capture and inspect state file; try `taint` and targeted apply.
-
-- Day 05 — Objective: Resource dependency model.
-  - Checklist: Demonstrate implicit dependencies via references and explicit `depends_on`.
-  - Lab: Build two resources with a dependency and observe plan ordering.
-
-- Day 06 — Objective: Data sources.
-  - Checklist: Read cloud provider docs for data sources; add a data lookup to a config.
-  - Lab: Query an existing VNet/subnet and use it in a sample deployment.
-
-- Day 07 — Project 1: Deploy a Static Website to Azure Blob Storage.
-  - Checklist: Create resource group, storage account, enable static website hosting, upload index.html.
-  - Deliverable: `day-07/` branch with `main.tf`, `variables.tf`, `outputs.tf`, and a README.
+- [Day 01](day-01/README.md) — Objective: Understand IaC principles and OpenTofu’s value.
+- [Day 02](day-02/README.md) — Objective: Install and configure OpenTofu and CLIs.
+- [Day 03](day-03/README.md) — Objective: HCL syntax — variables, maps, lists, outputs.
+- [Day 04](day-04/README.md) — Objective: OpenTofu lifecycle commands.
+- [Day 05](day-05/README.md) — Objective: Resource dependency model.
+- [Day 06](day-06/README.md) — Objective: Data sources.
+- [Day 07](day-07/README.md) — Project 1: Deploy a Static Website to Azure Blob Storage.
 
 ---
 
@@ -49,30 +29,14 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 *Goal: Build secure, production-ready Azure infra components.*
 
-- Day 08 — Objective: Remote state with Azure Storage.
-  - Checklist: Configure backend, enable state locking.
-
-- Day 09 — Objective: VNet and subnet design.
-  - Checklist: Create hub/spoke sample topology and document CIDR choices.
-
-- Day 10 — Objective: NSGs and network rules.
-  - Checklist: Implement least-privilege rules and test connectivity.
-
-- Day 11 — Objective: Identity and RBAC.
-  - Checklist: Create managed identity, assign roles, and test access from a VM or function.
-
-- Day 12 — Objective: Secrets and Key Vault.
-  - Checklist: Store a secret and reference it via provider; enable soft-delete.
-
-- Day 13 — Objective: Provision AKS cluster (baseline).
-  - Checklist: Create cluster, node pools, and kubeconfig output.
-
-- Day 14 — Objective: AKS scaling and node management.
-  - Checklist: Add autoscaling and validate pod scheduling.
-
-- Day 15 — Project 2: Secure AKS with private networking.
-  - Checklist: Private AKS cluster, private endpoint, and restricted API server.
-  - Deliverable: `day-15/` with module usage and network diagram.
+- [Day 08](day-08/README.md) — Objective: Remote state with Azure Storage.
+- [Day 09](day-09/README.md) — Objective: VNet and subnet design.
+- [Day 10](day-10/README.md) — Objective: NSGs and network rules.
+- [Day 11](day-11/README.md) — Objective: Identity and RBAC.
+- [Day 12](day-12/README.md) — Objective: Secrets and Key Vault.
+- [Day 13](day-13/README.md) — Objective: Provision AKS cluster (baseline).
+- [Day 14](day-14/README.md) — Objective: AKS scaling and node management.
+- [Day 15](day-15/README.md) — Project 2: Secure AKS with private networking.
 
 ---
 
