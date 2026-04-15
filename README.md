@@ -44,10 +44,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 *Goal: Master complex Azure architectures, global networking, and enterprise governance.*
 
-- Day 16 — Objective: Azure SQL and Database Security.
-  - Checklist: Provision Azure SQL with Private Endpoints, audit logging, and TDE.
-  - Lab: Lock down a database so it's only accessible via a specific VNet/Subnet.
-
+- [Day 16](day-16/README.md) — Objective: Azure SQL and Database Security.
 - Day 17 — Objective: App Service and VNet Integration.
   - Checklist: Deploy an App Service with Regional VNet Integration and Private Link.
   - Lab: Connect a PaaS app to a private database without using public IPs.
