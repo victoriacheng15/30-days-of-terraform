@@ -4,13 +4,6 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 ---
 
-## Estimated commitment
-
-- Recommended: 1–2 hours/day for guided learning, 3–4 hours on project days.
-- Adjust pace: skip sections you already know or expand project days into multiple sessions.
-
----
-
 ## 🛠 Phase 1: Foundations & HCL (Days 1–7)
 
 *Goal: Read, write, and run HCL; understand OpenTofu lifecycle and state.*
@@ -45,10 +38,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 *Goal: Master complex Azure architectures, global networking, and enterprise governance.*
 
 - [Day 16](day-16/README.md) — Objective: Azure SQL and Database Security.
-- Day 17 — Objective: App Service and VNet Integration.
-  - Checklist: Deploy an App Service with Regional VNet Integration and Private Link.
-  - Lab: Connect a PaaS app to a private database without using public IPs.
-
+- [Day 17](day-17/README.md) — Objective: App Service and VNet Integration.
 - Day 18 — Objective: Application Gateway and WAF.
   - Checklist: Configure an L7 Load Balancer with Web Application Firewall (WAF) policies.
   - Lab: Path-based routing and SSL termination for internal services.
