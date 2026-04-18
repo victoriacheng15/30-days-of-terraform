@@ -41,10 +41,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 - [Day 17](day-17/README.md) — Objective: App Service and VNet Integration.
 - [Day 18](day-18/README.md) — Objective: Application Gateway and WAF.
 - [Day 19](day-19/README.md) — Objective: Azure Front Door.
-- Day 20 — Objective: Observability with Azure Monitor.
-  - Checklist: Log Analytics workspaces, Diagnostic Settings, and KQL basics.
-  - Lab: Export Terraform logs to Log Analytics and build a resource health dashboard.
-
+- [Day 20](day-20/README.md) — Objective: Observability with Azure Monitor.
 - Day 21 — Objective: Azure Policy as Code.
   - Checklist: Implement naming conventions and allowed-region guardrails using Terraform.
   - Lab: Assign a policy that denies non-compliant resources and test it via `tofu apply`.
