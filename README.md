@@ -40,11 +40,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 - [Day 16](day-16/README.md) — Objective: Azure SQL and Database Security.
 - [Day 17](day-17/README.md) — Objective: App Service and VNet Integration.
 - [Day 18](day-18/README.md) — Objective: Application Gateway and WAF.
-
-- Day 19 — Objective: Azure Front Door.
-  - Checklist: Global traffic acceleration and security with Front Door.
-  - Lab: Implement a global entry point for multi-region Azure App Services.
-
+- [Day 19](day-19/README.md) — Objective: Azure Front Door.
 - Day 20 — Objective: Observability with Azure Monitor.
   - Checklist: Log Analytics workspaces, Diagnostic Settings, and KQL basics.
   - Lab: Export Terraform logs to Log Analytics and build a resource health dashboard.
