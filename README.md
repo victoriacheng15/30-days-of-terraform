@@ -39,9 +39,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 - [Day 16](day-16/README.md) — Objective: Azure SQL and Database Security.
 - [Day 17](day-17/README.md) — Objective: App Service and VNet Integration.
-- Day 18 — Objective: Application Gateway and WAF.
-  - Checklist: Configure an L7 Load Balancer with Web Application Firewall (WAF) policies.
-  - Lab: Path-based routing and SSL termination for internal services.
+- [Day 18](day-18/README.md) — Objective: Application Gateway and WAF.
 
 - Day 19 — Objective: Azure Front Door.
   - Checklist: Global traffic acceleration and security with Front Door.
