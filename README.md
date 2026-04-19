@@ -90,6 +90,37 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 ---
 
+## 📚 Appendix A: AWS Validation with OpenTofu (Optional)
+
+*Goal: Validate Azure-based infrastructure patterns on AWS using OpenTofu, 
+focusing on common services and cloud-agnostic design principles.*
+
+- A1 — Objective: AWS Core Concepts (from Azure perspective).
+  - Checklist:
+    - Compare VNet ↔ VPC, NSG ↔ Security Groups, Blob Storage ↔ S3, Entra ID ↔ IAM
+    - Identify similarities and differences in networking, identity, and storage models
+  - Lab:
+    - Create a comparison table and simple architecture diagram
+
+- A2 — Objective: AWS Core Infrastructure with OpenTofu.
+  - Checklist:
+    - Provision VPC, public subnet, and internet gateway
+    - Configure security group for basic access (e.g., HTTP/SSH)
+    - Create IAM role and attach appropriate permissions
+    - Launch EC2 instance with a basic application (e.g., Nginx or container)
+    - (Optional) Provision S3 bucket for object storage
+  - Lab:
+    - Deploy a working EC2-based service using OpenTofu
+
+- A3 — Objective: Multi-Cloud Validation (Optional).
+  - Checklist:
+    - Deploy equivalent services on Azure and AWS
+    - Compare infrastructure design, configuration, and trade-offs
+  - Deliverable:
+    - `day-a3/` with architecture notes and Terraform configurations
+
+---
+
 ## Resources and links
 
 - OpenTofu: https://github.com/opentofu/opentofu
