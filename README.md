@@ -43,9 +43,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 - [Day 19](day-19/README.md) — Objective: Azure Front Door.
 - [Day 20](day-20/README.md) — Objective: Observability with Azure Monitor.
 - [Day 21](day-21/README.md) — Objective: Azure Policy as Code.
-- Day 22 — Objective: Cost Management and Optimization.
-  - Checklist: Create budget alerts and automated tagging strategies.
-  - Lab: Use Terraform to enforce mandatory tags for cost-center allocation.
+- [Day 22](day-22/README.md) — Objective: Cost Management and Optimization.
 - Day 23 — Project 3: Secure Multi-tier PaaS Architecture.
   - Checklist: Combine App Service, SQL, Key Vault, and App Gateway into a hardened environment.
   - Deliverable: `day-23/` with a full "Landing Zone" style deployment.
