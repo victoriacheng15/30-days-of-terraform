@@ -18,10 +18,10 @@ resource "azurerm_resource_group" "cost_mgmt" {
 
 # Budget Alert - Monthly threshold
 resource "azurerm_consumption_budget_subscription" "monthly" {
-  name                   = "budget-monthly"
-  subscription_id        = "/subscriptions/${data.azurerm_client_config.current.subscription_id}"
-  amount                 = var.monthly_budget_amount
-  time_grain             = "Monthly"
+  name            = "budget-monthly"
+  subscription_id = "/subscriptions/${data.azurerm_client_config.current.subscription_id}"
+  amount          = var.monthly_budget_amount
+  time_grain      = "Monthly"
 
   time_period {
     start_date = "${formatdate("YYYY-MM-01", timestamp())}T00:00:00Z"

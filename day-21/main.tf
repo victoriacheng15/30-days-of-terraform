@@ -32,8 +32,8 @@ resource "azurerm_policy_definition" "allowed_locations" {
           equals = "Microsoft.Resources/subscriptions/resourceGroups"
         },
         {
-          field   = "location"
-          notIn   = "[parameters('allowedLocations')]"
+          field = "location"
+          notIn = "[parameters('allowedLocations')]"
         }
       ]
     }
@@ -66,8 +66,8 @@ resource "azurerm_policy_definition" "naming_convention" {
     if = {
       allOf = [
         {
-          field   = "type"
-          equals  = "Microsoft.Compute/virtualMachines"
+          field  = "type"
+          equals = "Microsoft.Compute/virtualMachines"
         },
         {
           field   = "name"

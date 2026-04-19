@@ -43,9 +43,11 @@ In this lab, you provision cost governance controls and test tag compliance.
    - Go to **Cost Management** → **Budgets**.
    - View the monthly budget alert and spending trends.
 7. Check tag policy compliance:
+
    ```bash
    az policy assignment list --query "[].{Name:name, Scope:scope}"
    ```
+
 8. Test tag enforcement by attempting to create a resource group without mandatory tags (should fail once policy is active).
 
 ---
