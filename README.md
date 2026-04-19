@@ -86,7 +86,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 ## 📚 Appendix A: AWS Validation with OpenTofu (Optional)
 
-*Goal: Validate Azure-based infrastructure patterns on AWS using OpenTofu, 
+*Goal: Validate Azure-based infrastructure patterns on AWS using OpenTofu,
 focusing on common services and cloud-agnostic design principles.*
 
 - A1 — Objective: AWS Core Concepts (from Azure perspective).
@@ -117,6 +117,6 @@ focusing on common services and cloud-agnostic design principles.*
 
 ## Resources and links
 
-- OpenTofu: https://github.com/opentofu/opentofu
-- Terraform docs (concepts and HCL): https://www.terraform.io/docs
-- Azure docs: https://learn.microsoft.com/azure
+- OpenTofu: <https://github.com/opentofu/opentofu>
+- Terraform docs (concepts and HCL): <https://www.terraform.io/docs>
+- Azure docs: <https://learn.microsoft.com/azure>

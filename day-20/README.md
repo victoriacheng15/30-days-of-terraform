@@ -40,11 +40,13 @@ In this lab, you provision observability plumbing and query the resulting teleme
    - Open **Log Analytics workspaces** → your workspace.
    - Go to **Logs** and run saved searches in category `day-20-observability`.
 5. Validate with sample KQL:
+
    ```kql
    AzureActivity
    | where TimeGenerated > ago(24h)
    | order by TimeGenerated desc
    ```
+
 6. Build a simple resource health dashboard:
    - Open **Azure Monitor Workbook**.
    - Add query visuals using the saved search queries.

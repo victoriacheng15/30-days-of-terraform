@@ -54,12 +54,12 @@ resource "azurerm_storage_account" "audit" {
 
 # 5. Azure SQL Server (Public Access Disabled)
 resource "azurerm_mssql_server" "sql" {
-  name                         = "sql-day16-${random_string.sql_name.result}"
-  resource_group_name          = azurerm_resource_group.sql.name
-  location                     = azurerm_resource_group.sql.location
-  version                      = "12.0"
-  administrator_login          = var.sql_admin_username
-  administrator_login_password = var.sql_admin_password
+  name                          = "sql-day16-${random_string.sql_name.result}"
+  resource_group_name           = azurerm_resource_group.sql.name
+  location                      = azurerm_resource_group.sql.location
+  version                       = "12.0"
+  administrator_login           = var.sql_admin_username
+  administrator_login_password  = var.sql_admin_password
   public_network_access_enabled = false # BLOCK PUBLIC INTERNET
 }
 
@@ -106,8 +106,8 @@ resource "azurerm_private_endpoint" "sql_pe" {
 
 # 10. Extended Auditing Policy (Security Practice)
 resource "azurerm_mssql_server_extended_auditing_policy" "audit" {
-  server_id              = azurerm_mssql_server.sql.id
-  storage_endpoint       = azurerm_storage_account.audit.primary_blob_endpoint
+  server_id                  = azurerm_mssql_server.sql.id
+  storage_endpoint           = azurerm_storage_account.audit.primary_blob_endpoint
   storage_account_access_key = azurerm_storage_account.audit.primary_access_key
-  retention_in_days      = 7
+  retention_in_days          = 7
 }

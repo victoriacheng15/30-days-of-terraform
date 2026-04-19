@@ -38,14 +38,18 @@ In this lab, you provision two custom policies and test compliance.
 3. Run `tofu apply`.
 4. Wait 5–15 minutes for policies to become active (Azure enforcement delay).
 5. View your policies:
+
    ```bash
    az policy definition list --query "[?policyType=='Custom'].{Name:displayName, Id:id}"
    az policy assignment list --query "[].{Name:name, Scope:scope}"
    ```
+
 6. Test location policy (should fail):
+
    ```bash
    az group create --name "test-rg-policy" --location "germanywestcentral"
    ```
+
    Expected: Policy denial error.
 
 7. Check policy compliance in Azure Portal:
