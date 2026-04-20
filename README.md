@@ -52,10 +52,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 *Goal: Scale your automation, test patterns, and validate across clouds.*
 
-- Day 24 — Objective: Modules and registry.
-  - Checklist: Build a reusable module, add versioning, and refactor Azure labs into modules.
-  - Lab: Publish to a module registry (or local mirror).
-
+- [Day 24](day-24/README.md) — Objective: Modules and registry.
 - Day 25 — Objective: Advanced expressions (`count`, `for_each`, dynamic blocks).
   - Checklist: Refactor duplicate resources into loops and parameterized modules.
   - Lab: Use `for_each` to manage multiple VNets or subnets dynamically.
