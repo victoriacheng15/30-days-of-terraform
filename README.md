@@ -54,9 +54,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 - [Day 24](day-24/README.md) — Objective: Modules and registry.
 - [Day 25](day-25/README.md) — Objective: Advanced expressions (`count`, `for_each`, dynamic blocks).
-- Day 26 — Objective: Testing with `tofu test` and policy-as-code.
-  - Checklist: Write unit tests for modules and add simple policy checks (e.g., Checkov or TFLint).
-  - Lab: Verify module outputs and resource attributes via automated tests.
+- [Day 26](day-26/README.md) — Objective: Testing with `tofu test` and policy-as-code.
 
 - Day 27 — Objective: CI/CD with GitHub Actions and OIDC.
   - Checklist: Create an action workflow that runs `tofu fmt`, `tofu init`, `tofu plan` and `tofu apply` using OIDC.
