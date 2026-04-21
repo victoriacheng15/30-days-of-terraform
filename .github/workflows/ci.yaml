@@ -1,0 +1,38 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  TF_IN_AUTOMATION: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: opentofu/setup-opentofu@v2
+
+      - name: Tofu Fmt Check
+        run: tofu fmt -check -recursive
+
+      - name: Tofu Validate (all day folders)
+        run: |
+          set -euo pipefail
+          for dir in day-*; do
+            if ls "$dir"/*.tf >/dev/null 2>&1; then
+              echo "Validating $dir"
+              (
+                cd "$dir"
+                tofu init -backend=false -input=false -no-color
+                tofu validate -no-color
+              )
+            fi
+          done
