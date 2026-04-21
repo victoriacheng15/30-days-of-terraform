@@ -56,7 +56,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 - [Day 25](day-25/README.md) — Objective: Advanced expressions (`count`, `for_each`, dynamic blocks).
 - [Day 26](day-26/README.md) — Objective: Testing with `tofu test` and policy-as-code.
 - [Day 27](day-27/README.md) — Objective: CI/CD with GitHub Actions and OIDC.
-- Day 28 — Objective: AWS Introduction for Azure Engineers.
+- [Day 28](day-28/README.md) — Objective: AWS Introduction for Azure Engineers.
   - Checklist: Networking (VPC) and Identity (IAM) comparison to Azure VNets/Entra ID.
   - Lab: Provision an S3 bucket with a basic IAM policy and compare to Azure Blob/RBAC.
 
