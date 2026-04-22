@@ -57,12 +57,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 - [Day 26](day-26/README.md) — Objective: Testing with `tofu test` and policy-as-code.
 - [Day 27](day-27/README.md) — Objective: CI/CD with GitHub Actions and OIDC.
 - [Day 28](day-28/README.md) — Objective: AWS Introduction for Azure Engineers.
-  - Checklist: Networking (VPC) and Identity (IAM) comparison to Azure VNets/Entra ID.
-  - Lab: Provision an S3 bucket with a basic IAM policy and compare to Azure Blob/RBAC.
-
-- Day 29 — Objective: AWS Compute and EKS.
-  - Checklist: Launch an EKS cluster basics or an EC2 instance with proper IAM roles.
-  - Lab: Compare EKS node pools and networking (VPC CNI) with Azure AKS patterns.
+- [Day 29](day-29/README.md) — Objective: AWS Compute and IAM Roles.
 
 - Day 30 — Final Capstone: Multi-Cloud Traffic Management.
   - Checklist: Combine Azure and AWS projects; implement cross-cloud DNS failover or global routing.
