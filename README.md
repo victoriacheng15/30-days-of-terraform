@@ -58,10 +58,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 - [Day 27](day-27/README.md) — Objective: CI/CD with GitHub Actions and OIDC.
 - [Day 28](day-28/README.md) — Objective: AWS Introduction for Azure Engineers.
 - [Day 29](day-29/README.md) — Objective: AWS Compute and IAM Roles.
-
-- Day 30 — Final Capstone: Multi-Cloud Traffic Management.
-  - Checklist: Combine Azure and AWS projects; implement cross-cloud DNS failover or global routing.
-  - Deliverable: `day-30/` with design doc, modules, and multi-cloud orchestration.
+- [Day 30](day-30/README.md) — Final Capstone: Multi-Cloud Traffic Management.
 
 ---
 
