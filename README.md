@@ -67,12 +67,7 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 *Goal: Validate Azure-based infrastructure patterns on AWS using OpenTofu,
 focusing on common services and cloud-agnostic design principles.*
 
-- A1 — Objective: AWS Core Concepts (from Azure perspective).
-  - Checklist:
-    - Compare VNet ↔ VPC, NSG ↔ Security Groups, Blob Storage ↔ S3, Entra ID ↔ IAM
-    - Identify similarities and differences in networking, identity, and storage models
-  - Lab:
-    - Create a comparison table and simple architecture diagram
+- [Day A1](day-a1/README.md) — Objective: AWS Core Concepts (from Azure perspective).
 
 - A2 — Objective: AWS Core Infrastructure with OpenTofu.
   - Checklist:
