@@ -75,6 +75,6 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 ## Resources and links
 
-- OpenTofu: https://github.com/opentofu/opentofu
-- Terraform docs (concepts and HCL): https://www.terraform.io/docs
-- Azure docs: https://learn.microsoft.com/azure
+- OpenTofu: <https://github.com/opentofu/opentofu>
+- Terraform docs (concepts and HCL): <https://www.terraform.io/docs>
+- Azure docs: <https://learn.microsoft.com/azure>
