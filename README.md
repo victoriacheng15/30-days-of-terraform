@@ -62,34 +62,19 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 ---
 
-## 📚 Appendix A: AWS Validation with OpenTofu (Optional)
+## 📚 Appendix A: AWS Infrastructure (Optional)
 
-*Goal: Validate Azure-based infrastructure patterns on AWS using OpenTofu,
-focusing on common services and cloud-agnostic design principles.*
+*Goal: Build practical AWS infrastructure patterns, learning cloud-agnostic design principles and services from an Azure engineer's perspective.*
 
-- [Day A1](day-a1/README.md) — Objective: AWS Core Concepts (from Azure perspective).
-
-- A2 — Objective: AWS Core Infrastructure with OpenTofu.
-  - Checklist:
-    - Provision VPC, public subnet, and internet gateway
-    - Configure security group for basic access (e.g., HTTP/SSH)
-    - Create IAM role and attach appropriate permissions
-    - Launch EC2 instance with a basic application (e.g., Nginx or container)
-    - (Optional) Provision S3 bucket for object storage
-  - Lab:
-    - Deploy a working EC2-based service using OpenTofu
-
-- A3 — Objective: Multi-Cloud Validation (Optional).
-  - Checklist:
-    - Deploy equivalent services on Azure and AWS
-    - Compare infrastructure design, configuration, and trade-offs
-  - Deliverable:
-    - `day-a3/` with architecture notes and Terraform configurations
+- [Day A1](day-a1/README.md) — Objective: AWS Identity (IAM) for Azure Engineers.
+- [Day A2](day-a2/README.md) — Objective: Secure 2-Tier AWS Architecture with ALB & Secrets.
+- [Day A3](day-a3/README.md) — Objective: AWS Data Persistence, Secrets & Monitoring.
+- [Day A4](day-a4/README.md) — Objective: AWS Containerization & Advanced Patterns (Optional).
 
 ---
 
 ## Resources and links
 
-- OpenTofu: <https://github.com/opentofu/opentofu>
-- Terraform docs (concepts and HCL): <https://www.terraform.io/docs>
-- Azure docs: <https://learn.microsoft.com/azure>
+- OpenTofu: https://github.com/opentofu/opentofu
+- Terraform docs (concepts and HCL): https://www.terraform.io/docs
+- Azure docs: https://learn.microsoft.com/azure
