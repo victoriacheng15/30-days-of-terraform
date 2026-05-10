@@ -73,6 +73,17 @@ A practical, day-by-day curriculum for understanding the end-to-end flow of Infr
 
 ---
 
+## 🔍 Appendix B: How OpenTofu Works Under the Hood (Optional)
+
+*Goal: Understand how OpenTofu manages infrastructure internally through state, providers, dependency graphs, reconciliation, idempotency, drift detection, and resource lifecycle decisions.*
+
+- [Day B1](day-b1/README.md) — Objective: State, providers, and how OpenTofu maps configuration to real infrastructure.
+- [Day B2](day-b2/README.md) — Objective: Dependency graph, execution ordering, and resource lifecycle decisions.
+- [Day B3](day-b3/README.md) — Objective: Declarative reconciliation, idempotency, and why repeated applies should become no-ops.
+- [Day B4](day-b4/README.md) — Objective: Drift detection, refresh behavior, and deciding whether to correct or accept changes.
+
+---
+
 ## Resources and links
 
 - OpenTofu: <https://github.com/opentofu/opentofu>
